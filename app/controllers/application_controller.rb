@@ -1,6 +1,5 @@
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
-  use Rack::Session::Cookie, :expire_after => 259200000000
   
   # To enable cross origin requests for all routes:
   set :bind, '0.0.0.0'
